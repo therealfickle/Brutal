@@ -1,6 +1,6 @@
-package me.therealfickle.rabid.datagen.assets;
+package me.therealfickle.brutal.datagen.assets;
 
-import me.therealfickle.rabid.init.RabidBlocks;
+import me.therealfickle.brutal.data.BrutalBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -26,9 +26,9 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators gen) {
-        gen.createTrivialCube(RabidBlocks.FICLIUM_BLOCK);
-        createCrate(gen, RabidBlocks.FICLIUM_CRATE);
-        createLightningRod(gen, RabidBlocks.POD_DISTRESS_LIGHT);
+        gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE);
+        gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
+        gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
 
 
     }
