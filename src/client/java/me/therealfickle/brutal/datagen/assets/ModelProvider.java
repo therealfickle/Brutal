@@ -30,6 +30,7 @@ public class ModelProvider extends FabricModelProvider {
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);
+        gen.createRotatedPillarWithHorizontalVariant(BrutalBlocks.INDUSTRIAL_REBAR_CONCRETE, TexturedModel.COLUMN_ALT, TexturedModel.COLUMN_HORIZONTAL_ALT);
 
 
     }

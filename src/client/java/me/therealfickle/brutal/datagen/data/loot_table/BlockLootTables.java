@@ -19,5 +19,6 @@ public class BlockLootTables extends FabricBlockLootTableProvider {
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);
+        dropSelf(BrutalBlocks.INDUSTRIAL_REBAR_CONCRETE);
     }
 }

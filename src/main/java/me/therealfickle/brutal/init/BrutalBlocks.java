@@ -31,6 +31,14 @@ public interface BrutalBlocks {
             BlockBehaviour.Properties.ofFullCopy(INDUSTRIAL_CONCRETE));
     Block INDUSTRIAL_CONCRETE_POWDER = register("industrial_concrete_powder", block -> new ConcretePowderBlock(INDUSTRIAL_CONCRETE, block),
             BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE_POWDER));
+    Block INDUSTRIAL_REBAR_CONCRETE = register("industrial_rebar_concrete", RotatedPillarBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .requiresCorrectToolForDrops()
+                    .strength(2f, 6f)
+                    .sound(SoundType.STONE)
+                    .instrument(NoteBlockInstrument.SNARE)
+    );
 
     static Block registerNoItem(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties properties) {
         var key = ResourceKey.create(Registries.BLOCK, id(name));

@@ -18,12 +18,10 @@ public class BlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BrutalBlocks.INDUSTRIAL_CONCRETE)
                 .add(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE)
-                .add(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
-        valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS)
+                .add(BrutalBlocks.INDUSTRIAL_REBAR_CONCRETE);
 
-                .add(BrutalBlocks.INDUSTRIAL_CONCRETE)
-                .add(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE)
-                .add(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);
     }
 }
