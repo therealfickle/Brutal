@@ -1,6 +1,6 @@
 package me.therealfickle.brutal.datagen.assets;
 
-import me.therealfickle.brutal.data.BrutalBlocks;
+import me.therealfickle.brutal.init.BrutalBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -29,6 +29,7 @@ public class ModelProvider extends FabricModelProvider {
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
+        gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);
 
 
     }

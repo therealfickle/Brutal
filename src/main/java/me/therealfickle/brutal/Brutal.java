@@ -1,7 +1,7 @@
 package me.therealfickle.brutal;
 
-import me.therealfickle.brutal.data.BrutalBlocks;
-import me.therealfickle.brutal.data.BrutalItems;
+import me.therealfickle.brutal.init.BrutalBlocks;
+import me.therealfickle.brutal.init.BrutalItems;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
 package me.therealfickle.brutal.datagen.data.loot_table;
 
-import me.therealfickle.brutal.data.BrutalBlocks;
+import me.therealfickle.brutal.init.BrutalBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.core.HolderLookup;
@@ -18,5 +18,6 @@ public class BlockLootTables extends FabricBlockLootTableProvider {
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE);
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
         dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
+        dropSelf(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);
     }
 }

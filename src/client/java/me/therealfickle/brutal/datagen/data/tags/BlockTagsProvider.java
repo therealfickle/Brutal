@@ -1,6 +1,6 @@
 package me.therealfickle.brutal.datagen.data.tags;
 
-import me.therealfickle.brutal.data.BrutalBlocks;
+import me.therealfickle.brutal.init.BrutalBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
@@ -24,5 +24,6 @@ public class BlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BrutalBlocks.INDUSTRIAL_CONCRETE)
                 .add(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE)
                 .add(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 }

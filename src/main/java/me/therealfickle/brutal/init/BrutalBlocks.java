@@ -1,4 +1,4 @@
-package me.therealfickle.brutal.data;
+package me.therealfickle.brutal.init;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -6,8 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -30,6 +29,8 @@ public interface BrutalBlocks {
             BlockBehaviour.Properties.ofFullCopy(INDUSTRIAL_CONCRETE));
     Block INDUSTRIAL_CONCRETE_BRICKS = register("industrial_concrete_bricks", Block::new,
             BlockBehaviour.Properties.ofFullCopy(INDUSTRIAL_CONCRETE));
+    Block INDUSTRIAL_CONCRETE_POWDER = register("industrial_concrete_powder", block -> new ConcretePowderBlock(INDUSTRIAL_CONCRETE, block),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE_POWDER));
 
     static Block registerNoItem(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties properties) {
         var key = ResourceKey.create(Registries.BLOCK, id(name));
