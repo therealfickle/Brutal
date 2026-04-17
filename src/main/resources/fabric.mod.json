@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "brutal",
+  "version": "${version}",
+  "name": "Brutal",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/brutal/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.therealfickle.brutal.client.BrutalDataGenerator"
+    ],
+    "client": [
+      "me.therealfickle.brutal.client.BrutalClient"
+    ],
+    "main": [
+      "me.therealfickle.brutal.Brutal"
+    ]
+  },
+  "mixins": [
+    "brutal.mixins.json",
+    {
+      "config": "brutal.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
