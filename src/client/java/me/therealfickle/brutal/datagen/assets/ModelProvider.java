@@ -1,5 +1,6 @@
 package me.therealfickle.brutal.datagen.assets;
 
+import me.therealfickle.brutal.init.BrutalBlockFamilies;
 import me.therealfickle.brutal.init.BrutalBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -26,7 +27,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators gen) {
-        gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE);
+        gen.family(BrutalBlocks.INDUSTRIAL_CONCRETE).generateFor(BrutalBlockFamilies.INDUSTRIAL_CONCRETE);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_TILE);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS);
         gen.createTrivialCube(BrutalBlocks.INDUSTRIAL_CONCRETE_POWDER);

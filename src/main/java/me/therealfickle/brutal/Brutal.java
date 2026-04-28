@@ -2,6 +2,7 @@ package me.therealfickle.brutal;
 
 import me.therealfickle.brutal.init.BrutalBlocks;
 import me.therealfickle.brutal.init.BrutalItems;
+import me.therealfickle.brutal.init.BrutalTabs;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
@@ -16,7 +17,9 @@ public class Brutal implements ModInitializer {
     public void onInitialize() {
         BrutalItems.init();
         BrutalBlocks.init();
+        BrutalTabs.init();
     }
+
     public static Identifier id(String path) {
         return Identifier.fromNamespaceAndPath(MODID, path);
     }

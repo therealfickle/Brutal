@@ -25,6 +25,9 @@ public interface BrutalBlocks {
                     .sound(SoundType.STONE)
                     .instrument(NoteBlockInstrument.SNARE)
     );
+    Block INDUSTRIAL_CONCRETE_SLAB = register("industrial_concrete_slab", SlabBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(INDUSTRIAL_CONCRETE));
+    Block INDUSTRIAL_CONCRETE_STAIRS = registerStair("industrial_concrete_stairs", INDUSTRIAL_CONCRETE);
     Block INDUSTRIAL_CONCRETE_TILE = register("industrial_concrete_tile", Block::new,
             BlockBehaviour.Properties.ofFullCopy(INDUSTRIAL_CONCRETE));
     Block INDUSTRIAL_CONCRETE_BRICKS = register("industrial_concrete_bricks", Block::new,
@@ -56,5 +59,10 @@ public interface BrutalBlocks {
         BrutalItems.register(name, (params) -> new BlockItem(regBlock, params), new Item.Properties());
 
         return regBlock;
+    }
+
+
+    private static Block registerStair(String string, Block block) {
+        return register(string, properties -> new StairBlock(block.defaultBlockState(), properties), BlockBehaviour.Properties.ofFullCopy(block));
     }
 }

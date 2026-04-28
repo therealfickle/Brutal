@@ -1,5 +1,6 @@
 package me.therealfickle.brutal.datagen.data.recipe;
 
+import me.therealfickle.brutal.init.BrutalBlockFamilies;
 import me.therealfickle.brutal.init.BrutalBlocks;
 import me.therealfickle.brutal.init.BrutalItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -8,6 +9,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.flag.FeatureFlagSet;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import org.jspecify.annotations.NonNull;
@@ -66,6 +69,17 @@ public class BrutalRecipeProvider extends FabricRecipeProvider {
                     /* output */ BrutalBlocks.INDUSTRIAL_CONCRETE_BRICKS,
                     /* input */ BrutalBlocks.INDUSTRIAL_CONCRETE
             );
+            stonecutterResultFromBase(
+                    RecipeCategory.BUILDING_BLOCKS,
+                    /* output */ BrutalBlocks.INDUSTRIAL_CONCRETE_SLAB,
+                    /* input */ BrutalBlocks.INDUSTRIAL_CONCRETE
+            );
+            stonecutterResultFromBase(
+                    RecipeCategory.BUILDING_BLOCKS,
+                    /* output */ BrutalBlocks.INDUSTRIAL_CONCRETE_STAIRS,
+                    /* input */ BrutalBlocks.INDUSTRIAL_CONCRETE
+            );
+            generateRecipes(BrutalBlockFamilies.INDUSTRIAL_CONCRETE, FeatureFlagSet.of(FeatureFlags.VANILLA));
 
 
         }
