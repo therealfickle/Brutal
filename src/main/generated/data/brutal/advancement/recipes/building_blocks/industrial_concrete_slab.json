@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_industrial_concrete": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brutal:industrial_concrete"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brutal:industrial_concrete_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_industrial_concrete"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brutal:industrial_concrete_slab"
+    ]
+  }
+}

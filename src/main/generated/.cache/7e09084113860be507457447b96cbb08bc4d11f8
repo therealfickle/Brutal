@@ -1,0 +1,6 @@
+// 1.21.11	-999999999-01-01T00:00:00	Brutal/Block Loot Tables
+f9d83237b1649297f45b2caded43a61e0e38fd4c data/brutal/loot_table/blocks/industrial_concrete.json
+124b93e28266badd0743e1e25a8adb136dec63b0 data/brutal/loot_table/blocks/industrial_concrete_bricks.json
+5ef513d49e6ee22e32287e967d737fc5d247a0c3 data/brutal/loot_table/blocks/industrial_concrete_powder.json
+ac5ef2dc950d7a0b6c3dd1e96003dd8162f5a15c data/brutal/loot_table/blocks/industrial_concrete_tile.json
+6a73b951c1258b4d135ab38547643541422c8ca2 data/brutal/loot_table/blocks/industrial_rebar_concrete.json

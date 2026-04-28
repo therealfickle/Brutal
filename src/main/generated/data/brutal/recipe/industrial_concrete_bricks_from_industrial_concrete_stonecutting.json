@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "brutal:industrial_concrete",
+  "result": {
+    "count": 1,
+    "id": "brutal:industrial_concrete_bricks"
+  }
+}

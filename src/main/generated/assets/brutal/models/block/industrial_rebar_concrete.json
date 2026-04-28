@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "brutal:block/industrial_rebar_concrete_top",
+    "side": "brutal:block/industrial_rebar_concrete"
+  }
+}

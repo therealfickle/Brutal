@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "brutal:block/industrial_rebar_concrete_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "brutal:block/industrial_rebar_concrete"
+    },
+    "axis=z": {
+      "model": "brutal:block/industrial_rebar_concrete_horizontal",
+      "x": 90
+    }
+  }
+}

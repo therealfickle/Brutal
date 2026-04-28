@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "brutal:industrial_concrete",
+    "X": "minecraft:iron_bars"
+  },
+  "pattern": [
+    "#X#",
+    "#X#",
+    "#X#"
+  ],
+  "result": {
+    "count": 8,
+    "id": "brutal:industrial_rebar_concrete"
+  }
+}
